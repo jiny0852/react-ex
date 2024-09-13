@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body {
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+table {
+    width: 500px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+thead {
+    color: #fff;
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
