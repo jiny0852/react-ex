@@ -1,81 +1,79 @@
 //import 라이브러리
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 //import css
 import '../css/reset.css';
-import '../css/ex02.css';
+import '../css/ex03.css';
 
 
 
-const Ex02 = () => {
+const Ex03 = () => {
 
-
-
-    const lastMovie = "2023년 영화 [서울의 봄]";
-    const imgProfile = "./images/Jung.jpg";
+    
+    const imgProfile = "./images/Job.jpg";
+    const bossName = "정우성";
 
 
     return (
 
         <>
-            <h1>정우성 프로필</h1>
-            <br/>
-
-
-            <h2>최근 작품</h2>
-            {lastMovie}
+            <h1>입사지원</h1>
             
 
 
-            <h2>프로필사진</h2>
-            <img src={imgProfile} alt="정우성프로필사진" />
-            <br/>
-            <a href="https://ko.wikipedia.org/wiki/정우성">위키백과 정우성(a요소 사용하지 말것)</a> <br/>
-            <Link to="https://ko.wikipedia.org/wiki/정우성" rel="noreferrer noopener">위키백과 정우성2</Link>
+            <h2>인사말</h2>
+            <img src={imgProfile} alt="좝ex" />
+            <p>
+                안녕하세요, javaex에 오신 것을 환영합니다!<br />
+                저희 javaex는 열정과 창의력을 가진 인재를 찾고 있으며, 여러분의 도전과 성장을 함께하고 싶습니다.<br />
+                이곳에서 여러분의 꿈을 펼쳐보세요.<br />
+                입사지원서를 제출해 주셔서 감사드리며, 좋은 인연이 되기를 바랍니다.<br />
+                감사합니다.
+            </p>
+            <h3 id="boss">사장 {bossName}</h3>
+            
 
-            <h2>정보</h2>
+            <br /><br />
+            <h2>모집요강</h2>
 
             
             <table border="1">
 
                 <colgroup>
-                    <col style={{width: '100px'}} />
-                    <col style={{width: '150px'}} />
-                    <col style={{width: '100px'}} />
-                    <col style={{width: '150px'}} />
+                    <col style={{width: '200px'}} />
+                    <col style={{width: '200px'}} />
+                    <col style={{width: '200px'}} />
+                    <col style={{width: '200px'}} />
                 </colgroup>
 
                 <thead>
                     <tr>
-                        <th>이름</th>
-                        <th>소속사</th>
-                        <th>생년월일</th>
-                        <th>데뷔작</th>
+                        <th colspan="2">모집직군</th>
+                        <th>모집전공</th>
+                        <th>비고</th>
                     </tr>
 
                 </thead>
 
                 <tbody>
-
                     <tr>
-                        <td>정우성</td>
-                        <td>아티스트컴포니</td>
-                        <td>1973/03/20</td>
-                        <td>1994년 영화 구미호</td>
+                        <td colspan="2">생산기술직</td>
+                        <td>화학공학</td>
+                        <td rowspan="3">전공관련 자격증 우대</td>
                     </tr>
                     <tr>
-                        <td colSpan='4'>
-
-                            <ol>
-                                <li>2023년 영화 [서울의 봄]</li>
-                                <li>2023년 영화 [보호자]</li>
-                                <li>2022년 영화 [헌트]</li>
-                                <li>2020년 영화 [강철비 2: 정상회담]</li>
-                                <li>2020년 영화 [지푸라기라고 잡고 싶은 짐승들]</li>
-                            </ol>
-
-                        </td>
+                        <td rowspan="2">생산지원직</td>
+                        <td>공무</td>
+                        <td>기계전기</td>
+                    </tr>
+                    <tr>
+                        <td>안전환경</td>
+                        <td>안전,환경</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">연구개발직</td>
+                        <td>화학공학</td>
+                        <td colspan="2">석사</td>
                     </tr>
 
                 </tbody>
@@ -83,10 +81,12 @@ const Ex02 = () => {
 
             </table>
 
-
-            <label htmlFor="txt-email">당신의 이메일 주소는?</label>
-            <input id="txt-email" type="text" name="" value="" placeholder='이메일' />
+            <br /><br />
+            <h2>이력서제출</h2>
+            <label for="file">파일 선택:</label>
+            <input type="file" id="file" name="file" />
             
+
 
             
 
@@ -99,4 +99,4 @@ const Ex02 = () => {
 
 }
 
-export default Ex02;
+export default Ex03;
