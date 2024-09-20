@@ -17,6 +17,12 @@ import Ex10 from './views/Ex10.jsx';
 import Ex11 from './views/Ex11.jsx';
 import Ex12 from './views/Ex12.jsx';
 import Ex13 from './views/Ex13.jsx';
+import Ex14 from './views/Ex14.jsx';
+import Ex15 from './views/Ex15.jsx';
+
+//import list from './views/list.jsx';
+//import editForm from './views/editForm.jsx';
+//import writeForm from './views/writeForm.jsx';
 
 
 
@@ -38,6 +44,16 @@ function App() {
           <Route path='/ex11' element={<Ex11 />} />
           <Route path='/ex12' element={<Ex12 />} />
           <Route path='/ex13' element={<Ex13 />} />
+          <Route path='/ex14' element={<Ex14 />} />
+          <Route path='/ex15' element={<Ex15 />} />
+
+          {/*
+          <Route path='/list' element={<list />} />
+          <Route path='/editForm' element={<editForm />} />
+          <Route path='/writeForm' element={<writeForm />} /> 
+          */}
+
+          
         </Routes>
       </BrowserRouter>
     </div>
