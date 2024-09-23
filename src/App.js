@@ -19,6 +19,8 @@ import Ex12 from './views/Ex12.jsx';
 import Ex13 from './views/Ex13.jsx';
 import Ex14 from './views/Ex14.jsx';
 import Ex15 from './views/Ex15.jsx';
+import Ex16 from './views/Ex16.jsx';
+import Ex17 from './views/Ex17.jsx';
 
 //import list from './views/list.jsx';
 //import editForm from './views/editForm.jsx';
@@ -46,6 +48,8 @@ function App() {
           <Route path='/ex13' element={<Ex13 />} />
           <Route path='/ex14' element={<Ex14 />} />
           <Route path='/ex15' element={<Ex15 />} />
+          <Route path='/ex16' element={<Ex16 />} />
+          <Route path='/ex17' element={<Ex17 />} />
 
           {/*
           <Route path='/list' element={<list />} />
